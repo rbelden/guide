@@ -3,8 +3,12 @@ title: Use Media Queries to Create Responsive Layouts
 ---
 ## Use Media Queries to Create Responsive Layouts
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/responsive-web-design/css-grid/use-media-queries-to-create-responsive-layouts/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+In this challenge, you are required to make the header area occupy the top row completely and the footer area occupy the bottom row completely CSS grid in <code> div class="container"</code>.
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+<strong>Hint</strong><br>
+When the viewport is <code>400px</code> or more, container class should have a grid-template-areas property in which the footer and header areas occupy the top and bottom rows respectively and advert and content occupy the left and right columns of the middle row.
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+<strong>Solution</strong><br>
+Since the challenge requires you to only adjust the header and footer, declare the following in your <code>@media (min-width) .container</code> CSS code block:
+  
+<p><code>grid-template-areas:<br>“header header”<br>“advert content”<br>“footer footer”;</code></p>
